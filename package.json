@@ -4,7 +4,7 @@
   "description": "A Better postMessage. Post a Message to a Web Worker while Automatically Detecting Transferable Objects",
   "main": "worker-post-message.js",
   "scripts": {
-    "test": "live-server --ignore=node_modules"
+    "serve": "live-server --ignore=node_modules"
   },
   "repository": {
     "type": "git",
