@@ -19,5 +19,5 @@ postMessage({
     data: new ArrayBuffer(100)
   },
   worker
-})
+});
 ```
