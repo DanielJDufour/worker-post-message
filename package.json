@@ -1,0 +1,25 @@
+{
+  "name": "worker-post-message",
+  "version": "0.0.0",
+  "description": "A Better postMessage. Post a Message to a Web Worker while Automatically Detecting Transferable Objects",
+  "main": "worker-post-message.js",
+  "scripts": {
+    "test": "live-server --ignore=node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/worker-post-message.git"
+  },
+  "keywords": [
+    "message",
+    "post",
+    "transferable",
+    "worker"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/worker-post-message/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/worker-post-message#readme"
+}
