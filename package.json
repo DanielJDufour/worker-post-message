@@ -1,6 +1,6 @@
 {
   "name": "worker-post-message",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Better postMessage. Post a Message to a Web Worker while Automatically Detecting Transferable Objects",
   "main": "worker-post-message.js",
   "scripts": {
