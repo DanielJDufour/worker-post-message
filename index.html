@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://unpkg.com/flug"></script>
     <script src="./worker-post-message.js"></script>
   </head>
   <body>
     <script>
-      const url = "data:text/plain," + encodeURIComponent(`self.onmessage = e => console.log("worker received:", e);`);
-      const worker = new Worker(url);
-      workerPostMessage({
-        debug: true,
-        message: {
-          'a': 1,
-          'b': 'C',
-          d: (new Uint32Array(123)).buffer
-        },
-        worker
+      test("basic", ({ eq }) => {
+        const url = "data:text/plain," + encodeURIComponent(`self.onmessage = e => console.log("worker received:", e);`);
+        const worker = new Worker(url);
+        workerPostMessage({
+          debug: true,
+          message: {
+            'a': 1,
+            'b': 'C',
+            d: (new Uint32Array(123)).buffer
+          },
+          worker
+        });
       });
     </script>
   </body>
